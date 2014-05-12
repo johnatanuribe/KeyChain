@@ -1,0 +1,14 @@
+@import "../libs/neat/neat-helpers";
+
+// Change the grid settings
+$grid-columns: 12;
+$max-width: 640px;
+
+//Visual Grid Helper
+$visual-grid: true;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.3;
+
+// Media Query Breakpoints
+$small      :new-breakpoint( max-width 640px, 12 );
+$big        :new-breakpoint( min-width 641px, 12 );

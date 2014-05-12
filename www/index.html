@@ -1,0 +1,197 @@
+<!doctype html>
+<html manifest="manifest.appcache" lang="en"> 
+	<head> 
+        <title>KeyChain</title> 
+        
+        <!-- WEB SEARCH META TAGS -->
+        <meta charset="utf-8">
+        <meta name="application-name" content="KeyChain" />
+        <meta name="author" content="Johnatan Uribe (@johnatanuribe)" />
+        <meta name="description" content="KeyChain - Transparent Landlord-Tenant Interaction" />
+        <meta name="keywords" content="KeyChain, app, Landlord, Tenant, Interaction, Rent, Apartment, House" />
+        <meta name="copyright" content="© 2013 Johnatan Uribe" />
+        <meta name="generator" content="Johnatan Uribe" />
+        <meta name="robots" content="index,follow,snippet,archive" />
+        <meta name="revisit-after" content="7 days">
+        
+        <!-- SAFARI WEB APP META TAGS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <!-- iOS FAVICONS -->
+        <link rel="apple-touch-icon-precomposed" href="img/icons/favicons/icon57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/favicons/icon57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/favicons/icon72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/icons/favicons/icon76.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/favicons/icon114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/icons/favicons/icon120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/favicons/icon144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/icons/favicons/icon152.png">
+
+        <!-- OTHER FAVICONS -->
+        <link rel="icon" sizes="16x16" type="image/vnd.microsoft.icon" href="img/icons/favicons/icon16.ico">
+        <link rel="icon" sizes="16x16" type="image/png" href="img/icons/favicons/icon16.png">
+        <link rel="icon" sizes="32x32" type="image/png" href="img/icons/favicons/icon32.png">
+        <link rel="icon" sizes="64x64" type="image/png" href="img/icons/favicons/icon64.png">
+        <link rel="icon" sizes="any" type="image/svg+xml" href="img/icons/favicons/icon.svg">
+
+        <!-- iOS Splash Screens -->
+        <!-- iPhone -->
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)">
+        <!-- iPhone (Retina) -->
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+        <!-- iPhone 5 -->
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+        <!-- iPad -->
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)">
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash748x1024.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)">
+        <!-- iPad (Retina) -->
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+        <link rel="apple-touch-startup-image" href="img/splash/ios/splash1496x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+            
+        <!-- ADD2HOME META TAGS -->
+        <script type="text/javascript">
+          (function(d) {
+            var config = {
+              kitId: 'njf7vmo',
+              scriptTimeout: 3000
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          })(document);
+        </script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="js/lib/add2home.css">
+        <script type="application/javascript" src="js/lib/add2home.js"></script>
+        <script src="js/libs/modernizr-2.6.2.min.js"></script>
+
+
+    </head> 
+    <body>
+
+        <header class="header">
+            <section class="main-nav">
+                <section class="nav-left">
+                    <a href="#">
+                        <img src="img/search-icon.png" />
+                    </a>
+                </section>
+                <h4 class="nav-title">83 Plymouth Ave.</h4>
+                <section class="nav-right">
+                    <a href="#">
+                        <img src="img/settings-icon.png" />
+                    </a>
+                </section>
+            </section>
+        </header>
+
+
+
+
+        <section class="profile">
+                <img src="img/profile-bg.png" />
+        </section>
+
+        <section class="table-view">
+            <div class="table-view-header">
+                <h5 class="header-title">Landlord</h5>
+                <a href="#" class="add-button">
+                Add
+                </a>
+            </div>
+            <ul class="table-view-cell">
+                <li>
+                    <img class="table-pic" src="img/profile-pic.png" />
+                    <h4 class="table-name">Eugene Vazquez</h4>
+                    <p class="table-description">How can I help?</p>
+                </li>
+
+            </ul>
+        </section>
+
+                <section class="table-view">
+            <div class="table-view-header">
+                <h5 class="header-title">HOUSEMATES</h5>
+                <a href="#" class="add-button">
+                Add
+                </a>
+            </div>
+            <ul class="table-view-cell">
+                <a href="#">
+                <li>
+                    <img class="table-pic" src="img/profile-pic.png" />
+                    <h4 class="table-name">Carl Webb</h4>
+                    <p class="table-description">Left Room</p>
+                </li>
+                </a>
+
+                <a href="#">
+                <li>
+                    <img class="table-pic" src="img/profile-pic.png" />
+                    <h4 class="table-name">Roger Williams</h4>
+                    <p class="table-description">Right Room</p>
+                </li>
+                
+                <a href="#">
+                <li>
+                    <img class="table-pic" src="img/profile-pic.png" />
+                    <h4 class="table-name">Peter Gilbert</h4>
+                    <p class="table-description">In-law</p>
+                </li>
+                </a>
+                <li></li>
+                <li></li>
+
+
+            </ul>
+        </section>
+
+
+
+
+        <footer class="footer">
+                <nav class="tab-bar">
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <img class="home-icon" src="img/home-icon.png" />
+                                <h5 class="icon-label">Home</h5>
+                            </li> 
+                        </a>
+                        <a href="#">
+                            <li>
+                                <img src="img/email-icon.png" />
+                                <h5 class="icon-label">Messages</h5>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                <img src="img/repairs-icon.png" />
+                                 <h5 class="icon-label">Repairs</h5>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                 <img src="img/payment-icon.png" />
+                                <h5 class="icon-label">Payments</h5>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                <img src="img/legal-icon.png" />
+                                <h5 class="icon-label">Legal</h5>
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+        </footer>
+            
+    <!-- SCRIPTS -->
+    <!-- HTML5 BP jQuery Technique -->
+    <script src="js/libs/zepto.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,189 @@
+/* Layout
+------------------------------------------------------------ */
+.body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
+    font-family: "proxima-nova",sans-serif;
+    font-weight: 100;
+}
+.body{
+  background-image: url('img/bg.jpg');
+}
+.header{
+  position:fixed;
+  top:0;
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-left:15px;
+  background: $color-header-bg;
+  color: $color-tan;
+  height: 65px;
+  overflow: hidden;
+  z-index:1;
+  width: 100%;
+
+  .main-nav{  
+    @include outer-container;
+    .nav-left {
+      @include span-columns(1);
+      text-align:left;
+    } 
+    .nav-title{
+      @include span-columns(10);
+      text-align: center;
+      text-transform: uppercase;
+      vertical-align: center;
+      margin-top:-5px;
+    }
+    .nav-right {
+      @include span-columns(1);
+      text-align: right;
+    }
+  }
+}
+
+
+.profile {
+  height:260px;
+  width: 100%;
+  overflow:hidden;
+  position:relative;
+  img{  
+    width:100%;
+    height: 100%;
+  }
+  .frame {
+    position:absolute;
+    top:50%;
+  }
+}
+
+
+
+.table-view {
+  width: 100%;
+  .table-view-header{
+    text-transform: uppercase;
+    width: 100%;
+    height:30px;
+    background-color:$color-grey;
+    .header-title{
+      @include outer-container;
+      @include span-columns(8);
+      padding-left: 15px;
+      color: $color-tan;
+      padding-top:8px;
+      font-weight: 100;
+    }
+    .add-button {
+      @include span-columns(4);
+      text-align:right;
+      color:$color-light-grey;
+      padding-right:15px;
+      padding-top:7px;
+      font-size:13px;
+    }
+  }
+
+  .table-view-cell{
+    width:100%;
+    @include outer-container;
+    li{
+      border-bottom: solid 1px #f6f6f6;
+      height:45px;
+      padding-left:15px;
+      overflow: hidden;
+      .table-pic {
+        margin-top: 4px;
+        height: 35px;
+        float: left;
+      }
+      .table-name {
+        width: 70%;
+        height:27px;
+        float: left;
+        margin-left:15px;
+        margin-top: -2px;
+        color:$color-grey;
+        font-weight:300;
+      }
+      .table-description {
+        width: 70%;
+        height: 10px;
+        float: left;
+        margin-left: 15px;
+        font-weight:300;
+        text-transform: uppercase;
+        color:$color-orange;
+      }
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  background: $color-footer-bg;
+  position: fixed;
+  bottom:0;
+  height:50px;
+  width: 100%;
+  border-top: 1px solid #f6f6f6;
+
+  .tab-bar {
+    @include outer-container;
+    margin-top: 0;
+    padding-top:0;
+  }
+
+  .tab-bar{
+    text-align:center;
+    ul{
+      height:100%;
+      width:100%;
+    }
+    li{
+      width:20%;
+      display:block;
+      float:left;
+      height:50px;
+      padding-top:6px;
+      text-transform:uppercase;
+      color: $color-link;
+      @include transition( background-color 0.9s );
+        &:hover {
+            background-color:$color-orange;
+            color:$color-tan;
+          }
+        &:active {
+            background-color:$color-orange;
+            color:$color-tan;
+        }
+        .home-icon {
+          margin-top: 5px;
+          margin-bottom: 3px;
+        }
+    }
+  }
+}
+
+
+
+/* Misc Styles - Should be in own file but its here for now
+------------------------------------------------------------ */
+.button{
+  @include button( #222, #ccc, 4px );
+}
