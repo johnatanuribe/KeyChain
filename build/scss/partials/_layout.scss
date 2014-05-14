@@ -3,10 +3,14 @@
 .body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
     font-family: "proxima-nova",sans-serif;
     font-weight: 100;
+    margin-bottom:0;
 }
 .body{
   background-image: url('img/bg.jpg');
 }
+
+//THIS IS THE NAVIGATION BAR
+
 .header{
   position:fixed;
   top:0;
@@ -41,18 +45,26 @@
 }
 
 
+//PROFILE 
+
+
 .profile {
-  height:260px;
+  height:197px;
   width: 100%;
   overflow:hidden;
   position:relative;
-  img{  
+  .profile-bg{  
     width:100%;
-    height: 100%;
   }
-  .frame {
+  .slide-show-arrows{
     position:absolute;
-    top:50%;
+    top:80px;
+    right:15px;
+  }
+  .profile-frame {
+    position:absolute;
+    top:40%;
+    left:35%;
   }
 }
 
@@ -117,23 +129,9 @@
     }
   }
 
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//FOOTER IS THE TAB BAR
 
 .footer{
   background: $color-footer-bg;
@@ -152,8 +150,9 @@
   .tab-bar{
     text-align:center;
     ul{
-      height:100%;
+      height:50px;
       width:100%;
+      overflow:hidden;
     }
     li{
       width:20%;
@@ -161,21 +160,23 @@
       float:left;
       height:50px;
       padding-top:6px;
-      text-transform:uppercase;
       color: $color-link;
       @include transition( background-color 0.9s );
-        &:hover {
-            background-color:$color-orange;
-            color:$color-tan;
-          }
-        &:active {
-            background-color:$color-orange;
-            color:$color-tan;
+      &:hover {
+          background-color:$color-orange;
+          color:$color-tan;
         }
-        .home-icon {
-          margin-top: 5px;
-          margin-bottom: 3px;
-        }
+      &:active {
+          background-color:$color-orange;
+          color:$color-tan;
+      }
+      .home-icon {
+        margin-top: 5px;
+        margin-bottom: 3px;
+      }
+      .icon-label{
+        margin-top:-6px;
+      }
     }
   }
 }
